@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <title>StoAvto</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <a class="logo" href="../main/index.html"><img src="../images/logo.png" alt="company logo"></a>
+            <div class="header_container">
+                <button class="btn">
+                        Каталог автомобилей
+                </button>
+                <ul class="adress">
+                    <li class="adress_item">
+                        г.Краснодар, ул.Иванова, 16А
+                    </li>
+                    <li class="adress_item" >
+                        г.Краснодар, ул.Пушкина, 32
+                    </li>
+                </ul>
+                <a href="tel:(044) 222-22-22">(044) 222-22-22</a>
+                <p class="work schedule">Пн-Сб: 10:00 - 19:00</p>
+                <img src="../icons/Vector.svg" alt="" class="icon_dot">
+                <img src="../icons/Vector.svg" alt="" class="icon_dot">
+                <img src="../icons/phone.svg" alt="phone_icon">
+                <img src="../icons/clock.svg" alt="clock_work">
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav_item">
+                <a class="nav_item-link" href="#">Дизайн</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_item-link" href="#">Видеообзоры</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_item-link" href="#">Комплектация и цены</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_item-link" href="#">Характеристики</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main"> 
+        <section class="title">
+            <h1 class="main_title-text">
+                Cherry Tiggo 4
+            </h1>
+            <p class="sub_text">От 1 124 900 руб.</p>
+            <p class="sub_text">В кредит за 11 990 р/месяц или меньше!</p>
+            <p class="sub_text">Подарок: 5 000 бонусных рублей!</p>
+        </section>
+        <button class="btn">
+            Записаться на Тест-драйв
+        </button>
+    </main>
+    <div class="slider">
+        <div class="slider_menu">
+            <img class="slider_img" src="../images/Rectangle 25.png" alt="auto_pre">
+        </div>
+        <ul class="slider_color">
+            <li class="slider_color-item">
+                <img src="../images/grey.svg" alt="color_auto">
+            </li>
+            <li class="slider_color-item">
+                <img src="../images/blue.svg" alt="color_auto">
+            </li>
+            <li class="slider_color-item">
+                <img src="../images/black.svg" alt="color_auto">
+            </li>
+            <li class="slider_color-item">
+                <img src="../images/orange.svg" alt="color_auto">
+            </li>
+            <li class="slider_color-item">
+                <img src="../images/red.svg" alt="color_auto">
+            </li>
+            <li class="slider_color-item">
+                <img src="../images/yellow.svg" alt="color_auto">
+            </li>
+            <li class="slider_color-item">
+                <img src="../images/black.svg" alt="color_auto">
+            </li>
+        </ul>
+        <button class="select_left">
+            <img src="../icons/left.svg" alt="">
+        </button>
+        <button class="select_left">
+            <img src="../icons/right.svg" alt="">
+        </button>
+    </div>
+    <section class="form_traid-in">
+        <h2 class="sub_title">
+            Калькулятор расчета traid-in
+        </h2>
+        <form class="popup" action="https://echo.htmlacademy.ru" method="post">
+            <div class="field">
+                <label for="input__name" class="label__popup">Имя</label>
+                <input type="text" id="input__name" class="input__popup" placeholder="Ваше имя">
+            </div>
+            <div class="field__wrapper">
+                <div class="field">
+                    <label for="input__phone" class="label__popup">Телефон</label>
+                    <input type="text" id="input__phone" class="input__popup" placeholder="Ваш телефон">
+                </div>
+                <div class="field">
+                    <label for="input__model" class="label__popup">Марка</label>
+                    <input type="email" id="input__text" class="input__popup" placeholder="Марка автомобиля">
+                </div>
+                <div class="field">
+                    <label for="input__model" class="label__popup">Модель</label>
+                    <input type="email" id="input__text" class="input__popup" placeholder="Модель автомобиля">
+                </div>
+            </div>
+            <div class="checkbox">
+                <input id="check-receipt" type="checkbox" class="checkbox__input visually-hidden" checked value="Receipt">
+                <label for="check-receipt" class="checkbox__label">Согласие на обработку ПД</label>
+            </div>
+            <button class="btn disabled__btn" type="submit">Отправить</button>
+        </form>
+    </section>
+    <section class="credit_calc">
+        <h2 class="sub_title">
+            Калькулятор расчета кредита
+        </h2>
+        <form class="popup" action="https://echo.htmlacademy.ru" method="post">
+            <div class="field">
+                <label for="input__name" class="label__popup">Имя</label>
+                <input type="text" id="input__name" class="input__popup" placeholder="Ваше имя">
+            </div>
+            <div class="field__wrapper">
+                <div class="field">
+                    <label for="input__phone" class="label__popup">Телефон</label>
+                    <input type="text" id="input__phone" class="input__popup" placeholder="Ваш телефон">
+                </div>
+                <div class="field">
+                    <label for="input__text" class="label__popup">Первый взнос</label>
+                    <select>
+                        <option>100 000руб.</option>
+                        <option>200 000руб.</option>
+                        <option>300 000руб.</option>
+                        <option>400 000руб.</option>
+                        <option>500 000руб.</option>
+                        <option>600 000руб.</option>
+                        <option>700 000руб.</option>
+                        <option>800 000руб.</option>
+                        <option>900 000руб.</option>
+                        <option>1 000 000руб.</option>
+                        <option>1 369 900руб.</option>
+                      </select>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input id="check-receipt" type="checkbox" class="checkbox__input visually-hidden" checked value="Receipt">
+                <label for="check-receipt" class="checkbox__label">Согласие на обработку ПД</label>
+            </div>
+            <button class="btn disabled__btn" type="submit" >Отправить</button>
+        </form>
+    </section>
+
+    <section class="sub_title auto">
+        <h2 class="sub_title auto_item">
+            Экстерьер
+        </h2>
+        <img src="../images/Rectangle 25.png" alt="auto">
+            <div class="slider_deck">
+                <ul class="slider_list">
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips_chek.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                </ul>
+            </div>
+            <p class="sub_text_desc">
+                Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                вместе с массивным бампером с раздвоенными решетками 
+                фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                и, даже спортивный вид.                
+                </p>
+    </section>
+    <section class="sub_title auto">
+        <h2 class="sub_title auto_item">
+            Интерьер
+        </h2>
+        <img src="../images/Rectangle 55.png" alt="auto">
+            <div class="slider_deck">
+                <ul class="slider_list">
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips_chek.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                </ul>
+            </div>
+            <p class="sub_text_desc">
+                Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                вместе с массивным бампером с раздвоенными решетками 
+                фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                и, даже спортивный вид.                
+                </p>
+    </section>
+    <section class="sub_title auto">
+        <h2 class="sub_title auto_item">
+            Комфорт и опции
+        </h2>
+        <img src="../images/Rectangle 56.png" alt="auto">
+            <div class="slider_deck">
+                <ul class="slider_list">
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips_chek.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                    <li class="slider_list-item">
+                        <img src="../icons/ellips.svg" alt="color_auto">
+                    </li>
+                </ul>
+            </div>
+            <p class="sub_text_desc">
+                Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                вместе с массивным бампером с раздвоенными решетками 
+                фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                и, даже спортивный вид.                
+                </p>
+    </section>
+        <section class="equipment">
+            <div class="container">
+                <h2 class="">Комплектации и цены</h2>
+                <div class="table">
+                    <div class="thead">
+                        <div class="tr">
+                            <div class="th name">Комплектация</div>
+                            <div class="th old-price">Цена</div>
+                            <div class="th price">Финальная цена</div>
+                        </div>
+                    </div>
+                    <div class="tbody">
+                        <div class="tr open">
+                            <button><img src="../icons/arrow_up.svg" alt="arrow_up"> </button>
+                            <button><img src="../icons/arrow_down.svg" alt="arrow_up"> </button>
+                                <p class="tname">1,5 МТ Base</p>   
+                            <div class="td old-price">1 129 900 руб.</div>
+                            <div class="td price">1 124 900 руб.</div>
+                            <div class="td credit">в кредит за 11 990 руб/мес или меньше!</div>
+                            <div class="td button"><a href="#" class="btn fancy">Рассчитать кредит</a></div>
+                        </div>
+                        <div class="detail open">
+                            <p class="detail_text">В дополнение к комплектации 1,5 MT Base:</p>
+                            <div class="detail_title">Безопасность</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">
+                                    Камера заднего вида (с системой динамической разметки)
+                                </li>
+                            </ul>
+                            <div class="detail_title">Комфорт</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">Обогрев рулевого колеса</li>
+                                <li class="detail_small-item">Обогрев форсунок стеклоомывателя</li>
+                                <li class="detail_small-item">Кожаная отделка сидений</li>
+                                <li class="detail_small-item">Кожаное многофункциональное рулевое колесо</li>
+                                <li class="detail_small-item">Задний центральный подлокотник</li>
+                                <li class="detail_small-item">Крючок для одежды</li>                            
+                            </ul>
+                            <div class="detail_title">Управление</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">Обогрев лобового стекла</li>
+                                <li class="detail_small-item">Тканевая отделка сидений</li>
+                                <li class="detail_small-item">Бесключевой запуск двигателя кнопкой</li>
+                                <li class="detail_small-item">Бесключевой доступ в автомобиль (ключ в кармане)</li>
+                            </ul>
+                            <div class="detail_title">Технологии и мультимедиа</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">Большой сенсорный 9" емкостный дисплей
+                                     с возможностью персонализации</li>
+                                <li class="detail_small-item">Доступ к навигации, видео-файлам, интернет
+                                    через смартфон на экране автомобиля*</li>
+                                <li class="detail_small-item">Система "Свободные руки"(Hands free) с Bluetooth-связью
+                                    с мобильным телефоном</li>
+                            </ul>
+
+
+
+
+
+                        <div class="tr">
+                            <div class="td name">
+                                <button><img src="../icons/arrow_up.svg" alt="arrow_up"> </button>
+                                <button><img src="../icons/arrow_down.svg" alt="arrow_up"> </button>
+                                <p class="tname">1,5 МТ Comfort</p>  
+                            <div class="td old-price">1 229 900 руб.</div>
+                            <div class="td price">1 174 900 руб.</div>
+                            <div class="td credit">в кредит за 11 990 руб/мес или меньше!</div>
+                            <div class="td old-price">1 129 900 руб.</div>
+                            <div class="td price">1 124 900 руб.</div>
+                            <div class="td credit">в кредит за 11 990 руб/мес или меньше!</div>
+                            <div class="td button"><a href="#" class="btn fancy">Рассчитать кредит</a></div>
+                        </div>
+                        <div class="detail open">
+                            <p class="detail_text">В дополнение к комплектации 1,5 MT Base:</p>
+                            <div class="detail_title">Безопасность</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">
+                                    Камера заднего вида (с системой динамической разметки)
+                                </li>
+                            </ul>
+                            <div class="detail_title">Комфорт</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">Обогрев рулевого колеса</li>
+                                <li class="detail_small-item">Обогрев форсунок стеклоомывателя</li>
+                                <li class="detail_small-item">Кожаная отделка сидений</li>
+                                <li class="detail_small-item">Кожаное многофункциональное рулевое колесо</li>
+                                <li class="detail_small-item">Задний центральный подлокотник</li>
+                                <li class="detail_small-item">Крючок для одежды</li>                            
+                            </ul>
+                            <div class="detail_title">Управление</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">Обогрев лобового стекла</li>
+                                <li class="detail_small-item">Тканевая отделка сидений</li>
+                                <li class="detail_small-item">Бесключевой запуск двигателя кнопкой</li>
+                                <li class="detail_small-item">Бесключевой доступ в автомобиль (ключ в кармане)</li>
+                            </ul>
+                            <div class="detail_title">Технологии и мультимедиа</div>
+                            <ul class="detail_small">
+                                <li class="detail_small-item">Большой сенсорный 9" емкостный дисплей
+                                     с возможностью персонализации</li>
+                                <li class="detail_small-item">Доступ к навигации, видео-файлам, интернет
+                                    через смартфон на экране автомобиля*</li>
+                                <li class="detail_small-item">Система "Свободные руки"(Hands free) с Bluetooth-связью
+                                    с мобильным телефоном</li>
+                            </ul>
+
+
+
+
+                        <div class="tr">
+                            <div class="td name">    
+                                <button><img src="../icons/arrow_up.svg" alt="arrow_up"> </button>
+                                <button><img src="../icons/arrow_down.svg" alt="arrow_up"> </button>
+                                <p class="tname">1,5 CVT Luxury</p>    
+                            <div class="td old-price">1 309 900 руб.</div>
+                            <div class="td price">1 244 900 руб.</div>
+                            <div class="td credit">в кредит за 11 990 руб/мес или меньше!</div>
+                            <div class="td button"><a href="#" class="btn fancy">Рассчитать кредит</a></div>
+                        </div>
+                        <div class="detail">
+                            <p>В дополнение к комплектации 1,5 MT Comfort:</p>
+                            <div class="title">Управление</div>
+                            <ul class="small">
+                                <li>Электрический стояночный тормоз с функцией AutoHold</li>
+                            </ul>
+                        </div>
+                        <div class="tr">
+                            <div class="td name">      
+                                <button><img src="../icons/arrow_up.svg" alt="arrow_up"> </button>
+                                <button><img src="../icons/arrow_down.svg" alt="arrow_up"> </button>
+                            <p class="tname">2,0 CVT Techno</p>   
+                            <div class="td old-price">1 419 900 руб.</div>
+                            <div class="td price">1 354 900 руб.</div>
+                            <div class="td credit">в кредит за 11 990 руб/мес или меньше!</div>
+                            <div class="td button"><a href="#" class="btn fancy">Рассчитать кредит</a></div>
+                        </div>
+                        <div class="detail">
+                            <p>В дополнение к комплектации 1,5 CVT Comfort:</p>
+                            <div class="title">Дизайн</div>
+                            <ul class="small">
+                                <li>18-дюймовые алюминиевые литые диски (двухцветные с алмазной обработкой)</li>
+                            </ul>
+                            <div class="title">Комфорт</div>
+                            <ul class="small">
+                                <li>Обогрев задних сидений</li>
+                                <li>Водительское сиденье с электр.регулировкой в 6 напр. (продольная, по высоте, наклону спинки)</li>
+                                <li>Водительское сиденье с электрической регулировкой поясничного упора</li>
+                                <li>Передние и задние стеклоподъемники с защитой от защемления</li>
+                                <li>Очешник</li>
+                            </ul>
+                            <div class="title">Управление</div>
+                            <ul class="small">
+                                <li>Режим Sport/Eco mode</li>
+                                <li>Гидравлический усилитель рулевого управления</li>
+                            </ul>
+                            <div class="title">Технологии и мультимедиа</div>
+                            <ul class="small">
+                                <li>"Умный" ключ-браслет - дополнительное оборудование (доплата 9 900 руб)</li>
+                                <li>6 динамиков</li>
+                                <li>Цветной экран 7" с бортовым компьютером в панели приборов с выбором цвета</li>
+                                <li>Система распознавания жестов</li>
+                            </ul>
+                        </div>
+
+
+
+
+                        <div class="tr">
+                            <div class="td name">      
+                                <button><img src="../icons/arrow_up.svg" alt="arrow_up"> </button>
+                                <button><img src="../icons/arrow_down.svg" alt="arrow_up"> </button>
+                                <p class="tname">1,5T DCT Cosmo</p> 
+                            <div class="td old-price">1 499 900 руб.</div>
+                            <div class="td price">1 434 900 руб.</div>
+                            <div class="td credit">в кредит за 11 990 руб/мес или меньше!</div>
+                            <div class="td button"><a href="#fbox_credit" class="btn fancy">Рассчитать кредит</a></div>
+                        </div>
+                        <div class="detail">
+                            <p>В дополнение к комплектации 2,0 CVT Techno:</p>
+                            <div class="title">Безопасность</div>
+                            <ul class="small">
+                                <li>Боковые передние подушки безопасности</li>
+                                <li>Шторки безопасности</li>
+                            </ul>
+                            <div class="title">Комфорт</div>
+                            <ul class="small">
+                                <li>Дистанционный запуск двигателя</li>
+                                <li>Дефлекторы для второго ряда</li>
+                                <li>Кожаная отделка сидений</li>
+                                <li>Кожаное многофункциональное рулевое колесо</li>
+                                <li>Задний центральный подлокотник</li>
+                                <li>Крючок для одежды</li>
+                            </ul>
+                            <div class="title">Управление</div>
+                            <ul class="small">
+                                <li>Электрический усилитель рулевого управления</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">Оставить заявку</button>
+        </section>
+
+        <section class="equipment_two">
+            <h2 class="tname">Характеристики Tiggo 4</h2>
+            <div class="container">
+                <div class="characteristics">
+                    <ul class="characteristics_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="power">
+                    <ul class="power_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="fuel">
+                    <ul class="fuel_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="transmission">
+                    <ul class="transmission_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="suspension">
+                    <ul class="suspension_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="brake">
+                    <ul class="brake_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="steering">
+                    <ul class="steering_list">
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+        </section>
+        <section class="">
+            <div class="slider">
+                <div class="slider_menu">
+                    <img class="slider_img" src="../images/Rectangle 69.png" alt="auto_pre">
+                </div>
+                <div class="slider_deck">
+                    <ul class="slider_list">
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips.svg" alt="color_auto">
+                        </li>
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips.svg" alt="color_auto">
+                        </li>
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips.svg" alt="color_auto">
+                        </li>
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips_chek.svg" alt="color_auto">
+                        </li>
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips.svg" alt="color_auto">
+                        </li>
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips.svg" alt="color_auto">
+                        </li>
+                        <li class="slider_list-item">
+                            <img src="../icons/ellips.svg" alt="color_auto">
+                        </li>
+                    </ul>
+        </section>
+        <section class="news">
+            <h2 class="news_title">Новости</h2>
+            <div class="news_container">
+                <div class="news_card">
+                    <img src="../images/Rectangle 65.png" alt="news_img">
+                    <p class="news_sub-title">
+                        Chery и iFlytek углубили всестороннее стратегическое сотрудничество
+                    </p>
+                    <p class="news_text">
+                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
+                        соглашение об углублении 
+                        стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
+                        для серийных автомобилей, 
+                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                    </p>
+                    <a href="#">Читать больше</a>
+                </div>
+            </div>
+            <div class="news_container">
+                <div class="news_card">
+                    <img src="../images/Rectangle 65.png" alt="news_img">
+                    <p class="news_sub-title">
+                        Chery и iFlytek углубили всестороннее стратегическое сотрудничество
+                    </p>
+                    <p class="news_text">
+                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
+                        соглашение об углублении 
+                        стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
+                        для серийных автомобилей, 
+                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                    </p>
+                    <a href="#">Читать больше</a>
+                </div>
+            </div>
+            <div class="news_container">
+                <div class="news_card">
+                    <img src="../images/Rectangle 65.png" alt="news_img">
+                    <p class="news_sub-title">
+                        Chery и iFlytek углубили всестороннее стратегическое сотрудничество
+                    </p>
+                    <p class="news_text">
+                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
+                        соглашение об углублении 
+                        стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
+                        для серийных автомобилей, 
+                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                    </p>
+                    <a href="#">Читать больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback_container">
+                <div class="feedback_card">
+                    <img src="../images/Ellipse 55.png" alt="feedback_img">
+                    <p class="feedback_sub-title">
+                        Роман Лесной
+                    </p>
+                    <p class="feedback_text">
+                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное соглашение 
+                        об углублении стратегического взаимодействия в области разработки решений систем искусственного интеллекта 
+                        (ИИ) для серийных автомобилей, 
+                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                    </p>
+                </div>
+                <div class="feedback_card">
+                    <img src="../images/Ellipse 55.png" alt="feedback_img">
+                    <p class="feedback_sub-title">
+                        Роман Лесной
+                    </p>
+                    <p class="feedback_text">
+                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное соглашение 
+                        об углублении стратегического взаимодействия в области разработки решений систем искусственного интеллекта 
+                        (ИИ) для серийных автомобилей, 
+                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                    </p>
+                </div>
+                <div class="feedback_card">
+                    <img src="../images/Ellipse 55.png" alt="feedback_img">
+                    <p class="feedback_sub-title">
+                        Роман Лесной
+                    </p>
+                    <p class="feedback_text">
+                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное соглашение 
+                        об углублении стратегического взаимодействия в области разработки решений систем искусственного интеллекта 
+                        (ИИ) для серийных автомобилей, 
+                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.866453368904!2d49.411252315815794!3d53.57799998002826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4167d7c825fa0d55%3A0xe7119eab7216886e!2z0JPQmiAi0JDRgdCQ0LLRgtC-Ig!5e0!3m2!1sru!2sru!4v1624537743551!5m2!1sru!2sru" width="100%" height="492" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>

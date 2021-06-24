@@ -1,0 +1,14 @@
+.header {
+    margin-bottom: 126px;
+ }
+
+.header_container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 200px;
+}
+
+.nav{
+    background-color: black;
+}
