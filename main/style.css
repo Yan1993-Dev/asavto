@@ -36,6 +36,12 @@
     width: 208px;
     height: 38px;
     border: 0;
+    
+}
+
+.btn:hover {
+    color: #3482C6;
+    box-shadow: 0.1;
 }
 
 .adress{
@@ -63,6 +69,7 @@
 
 .nav{
     font-family: 'Tactic Sans-Blt';
+    src: url(../fonts/TacticSans-Bld.ttf);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,6 +81,7 @@
 
 .nav_item-link {
     font-family: 'TacticSans-Bld';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -86,7 +94,8 @@
 }
 
 .main_title {
-    font-family: 'Tactic Sans';
+    font-family: 'Tactic Sans-Bld';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 58px;
     font-style: normal;
     font-weight: 400;
@@ -98,7 +107,8 @@
 }
 
 .sub_text {
-    font-family: 'TacticSans';
+    font-family: 'TacticSans-Blt';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
@@ -108,6 +118,8 @@
 }
 
 .sub_text_wrapper {
+    font-family: 'Tactic Sans-Bld';
+    src: url(../fonts/TacticSans-Bld.ttf);
     margin-top: 15px;
 }
 .second {
@@ -124,6 +136,7 @@
 
 .title_item {
     font-family: 'TacticSans';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
@@ -153,6 +166,7 @@
 
 .equipment_title{
     font-family: 'TacticSans-Bld';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -163,7 +177,8 @@
 }
 
 .thead {
-    font-family: 'TacticSans';
+    font-family: 'TacticSans-Bld';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
@@ -174,6 +189,7 @@
 
 .detail_title{
     font-family: 'TacticSans-Bld';
+    src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
