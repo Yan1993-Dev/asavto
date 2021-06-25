@@ -1,14 +1,184 @@
 .header {
     margin-bottom: 126px;
  }
+.header_inner {
+    display: flex;
+    flex-direction: row;
+    margin-left: 196px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
 .header_container{
     display: flex;
     flex-direction: row;
-    text-align: center;
-    padding-left: 200px;
+    align-items: center;
+}
+
+.company_logo_wrapper {
+    padding-right: 61px;
+}
+
+.header_btn_wrapper {
+    width: 208px;
+    height: 38px;
+    left: 364px;
+    top: 20px;
+
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    background: #3482C6;
+    width: 208px;
+    height: 38px;
+    border: 0;
+}
+
+.adress{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 328px;
+}
+
+.icon_dot {
+    margin-right: 14px;
+}
+
+.phone_wrapper {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    padding-left: 100px;
 }
 
 .nav{
+    font-family: 'Tactic Sans-Blt';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 405px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: black;
+}
+
+.nav_item-link {
+    font-family: 'TacticSans-Bld';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 83px;
+}
+
+.main_title {
+    font-family: 'Tactic Sans';
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 139px;
+    padding-bottom: 40px;
+}
+
+.sub_text {
+    font-family: 'TacticSans';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sub_text_wrapper {
+    margin-top: 15px;
+}
+.second {
+    padding-top: 10px;
+}
+
+.main_wrapper {
+    margin-left: 260px;
+}
+
+.btn {
+    font-family: 'Noto Sans';
+}
+
+.title_item {
+    font-family: 'TacticSans';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text_color {
+    color: #18a0fb;
+}
+
+.slider {
+    position: absolute;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.sub_text_desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.equipment_title{
+    font-family: 'TacticSans-Bld';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.thead {
+    font-family: 'TacticSans';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.detail_title{
+    font-family: 'TacticSans-Bld';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
