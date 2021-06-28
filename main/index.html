@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="../slider/slider.css">
     <link rel="stylesheet" href="../slider/slider_main.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut" href="../icons/favicon.svg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
+<link rel="stylesheet" href="../slider/slider.css">
     <title>StoAvto</title>
 </head>
 <body>
@@ -74,163 +76,242 @@
                 </button>
             </div>
         </section>
-    <div class="slider">
-        <div class="slider_item">
-            <img src="../images/Rectangle 25.png" alt="" class="">
+        <div class="container">
+            <div class="slider">
+                <div class="slider_wrapper slider_wrapper_js">
+                    <div class="slider_inner_wrapper slider_inner_wrapper_js">
+                        <img src="../images/blue_tiggo4.png" alt="" class="slider_slide slider_slide_js">
+                        <img src="../images/blue_tiggo4.png" alt="" class="slider_slide slider_slide_js">
+                        <img src="../images/blue_tiggo4.png" alt="" class="slider_slide slider_slide_js">
+                        <img src="../images/blue_tiggo4.png" alt="" class="slider_slide slider_slide_js">
+                        <img src="../images/blue_tiggo4.png" alt="" class="slider_slide slider_slide_js">
+                    </div>
+                </div>
+                <div class="slider_bottom-panel">
+                    <button class="slider_button slider_button-back_js"></button>
+                </div>
+            </div>
         </div>
-        <div class="slider_item">
-            <img src="../images/Rectangle 55.png" alt="" class="">
-        </div>
-        <div class="slider_item">
-            <img src="../images/Rectangle 56.png" alt="" class="">
-        </div>
-        <div class="slider_item">
-            <img src="../images/Rectangle 55.png" alt="" class="">
-        </div>
-        <div class="slider_item">
-            <img src="../images/Rectangle 56.png" alt="" class="">
-        </div>
+    <div class="form_wrapper">
+        <section class="form_traid-in">
+            <h2 class="sub_title">
+                Калькулятор расчета traid-in
+            </h2>
+            <form class="traid-in_calc" action="https://echo.htmlacademy.ru" method="post">
+                <div class="field">
+                    <label for="input__name" class="label__traid-in">Имя</label>
+                    <input type="text" id="input__name" class="input__traid-in" placeholder="Ваше имя">
+                </div>
+                <div class="field__wrapper">
+                    <div class="field">
+                        <label for="input__phone" class="label__traid-in">Телефон</label>
+                        <input type="text" id="input__phone" class="input__traid-in" placeholder="Ваш телефон">
+                    </div>
+                    <div class="field">
+                        <label for="input__model" class="label__traid-in">Марка</label>
+                        <input type="email" id="input__text" class="input__traid-in" placeholder="Марка автомобиля">
+                    </div>
+                    <div class="field">
+                        <label for="input__model" class="label__traid-in">Модель</label>
+                        <input type="email" id="input__text" class="input__traid-in" placeholder="Модель автомобиля">
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input id="check-receipt" type="radio" class="checkbox__input " checked value="Receipt">
+                    <label for="check-receipt" class="checkbox__label">Согласие на обработку ПД</label>
+                </div>
+                <button class="btn disabled__btn" type="submit">Отправить</button>
+            </form>
+        </section>
+        <section class="credit_calc">
+            <h2 class="sub_title">
+                Калькулятор расчета кредита
+            </h2>
+            <form class="credit_calc_wp" action="https://echo.htmlacademy.ru" method="post">
+                <div class="field">
+                    <label for="input__name" class="label__traid-in">Имя</label>
+                    <input type="text" id="input__name" class="input__traid-in" placeholder="Ваше имя">
+                </div>
+                <div class="field__wrapper">
+                    <div class="field">
+                        <label for="input__phone" class="label__traid-in">Телефон</label>
+                        <input type="text" id="input__phone" class="input__traid-in" placeholder="Ваш телефон">
+                    </div>
+                    <div class="field">
+                        <label for="input__text" class="label__traid-in">Первый взнос</label>
+                        <select class="input_inner input__traid-in">
+                            <option class="">Первый взнос</option>
+                            <option>100 000руб.</option>
+                            <option>200 000руб.</option>
+                            <option>300 000руб.</option>
+                            <option>400 000руб.</option>
+                            <option>500 000руб.</option>
+                            <option>600 000руб.</option>
+                            <option>700 000руб.</option>
+                            <option>800 000руб.</option>
+                            <option>900 000руб.</option>
+                            <option>1 000 000руб.</option>
+                            <option>1 369 900руб.</option>
+                          </select>
+                    </div>
+                    <div class="field">
+                        <label for="input__phone" class="label__traid-in">Срок</label>
+                        <input type="text" id="input__phone" class="input__traid-in" placeholder="Срок">
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input id="check-receipt" type="radio" class="checkbox__input " checked value="Receipt">
+                    <label for="check-receipt" class="checkbox__label">Согласие на обработку ПД</label>
+                </div>
+                <button class="btn disabled__btn" type="submit" >Отправить</button>
+            </form>
+        </section>
     </div>
-    <section class="form_traid-in">
-        <h2 class="sub_title">
-            Калькулятор расчета traid-in
-        </h2>
-        <form class="popup" action="https://echo.htmlacademy.ru" method="post">
-            <div class="field">
-                <label for="input__name" class="label__popup">Имя</label>
-                <input type="text" id="input__name" class="input__popup" placeholder="Ваше имя">
-            </div>
-            <div class="field__wrapper">
-                <div class="field">
-                    <label for="input__phone" class="label__popup">Телефон</label>
-                    <input type="text" id="input__phone" class="input__popup" placeholder="Ваш телефон">
-                </div>
-                <div class="field">
-                    <label for="input__model" class="label__popup">Марка</label>
-                    <input type="email" id="input__text" class="input__popup" placeholder="Марка автомобиля">
-                </div>
-                <div class="field">
-                    <label for="input__model" class="label__popup">Модель</label>
-                    <input type="email" id="input__text" class="input__popup" placeholder="Модель автомобиля">
-                </div>
-            </div>
-            <div class="checkbox">
-                <input id="check-receipt" type="checkbox" class="checkbox__input visually-hidden" checked value="Receipt">
-                <label for="check-receipt" class="checkbox__label">Согласие на обработку ПД</label>
-            </div>
-            <button class="btn disabled__btn" type="submit">Отправить</button>
-        </form>
-    </section>
-    <section class="credit_calc">
-        <h2 class="sub_title">
-            Калькулятор расчета кредита
-        </h2>
-        <form class="popup" action="https://echo.htmlacademy.ru" method="post">
-            <div class="field">
-                <label for="input__name" class="label__popup">Имя</label>
-                <input type="text" id="input__name" class="input__popup" placeholder="Ваше имя">
-            </div>
-            <div class="field__wrapper">
-                <div class="field">
-                    <label for="input__phone" class="label__popup">Телефон</label>
-                    <input type="text" id="input__phone" class="input__popup" placeholder="Ваш телефон">
-                </div>
-                <div class="field">
-                    <label for="input__text" class="label__popup">Первый взнос</label>
-                    <select>
-                        <option>100 000руб.</option>
-                        <option>200 000руб.</option>
-                        <option>300 000руб.</option>
-                        <option>400 000руб.</option>
-                        <option>500 000руб.</option>
-                        <option>600 000руб.</option>
-                        <option>700 000руб.</option>
-                        <option>800 000руб.</option>
-                        <option>900 000руб.</option>
-                        <option>1 000 000руб.</option>
-                        <option>1 369 900руб.</option>
-                      </select>
-                </div>
-            </div>
-            <div class="checkbox">
-                <input id="check-receipt" type="checkbox" class="checkbox__input visually-hidden" checked value="Receipt">
-                <label for="check-receipt" class="checkbox__label">Согласие на обработку ПД</label>
-            </div>
-            <button class="btn disabled__btn" type="submit" >Отправить</button>
-        </form>
-    </section>
-
     <section class="sub_title auto">
         <h2 class="title_item">
             Экстерьер
         </h2>
-        <img src="../images/Rectangle 25.png" alt="auto">
-            <div class="slider_deck">
-                <ul class="slider_list">
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips_chek.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                </ul>
+        <div class="slider_one">
+            <div class="slider_item">
+                <img src="../images/Rectangle 25.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
             </div>
-            <p class="sub_text_desc">
-                Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
-                Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
-                массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
-                обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
-                Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
-                вместе с массивным бампером с раздвоенными решетками 
-                фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
-                и, даже спортивный вид.                
-                </p>
+            <div class="slider_item">
+                <img src="../images/Rectangle 55.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 56.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 56.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 55.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+        </div>
+            
     </section>
     <section class="sub_title auto">
         <h2 class="title_item">
             Интерьер
         </h2>
-        <img src="../images/Rectangle 55.png" alt="auto">
-            <div class="slider_deck">
-                <ul class="slider_list">
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips_chek.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                </ul>
+        <div class="slider_two">
+            <div class="slider_item">
+                <img src="../images/Rectangle 25.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
             </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 55.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 56.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 56.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 55.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+        </div>
+            
             <p class="sub_text_desc">
                 Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
                 Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
@@ -246,42 +327,73 @@
         <h2 class="title_item">
             Комфорт и опции
         </h2>
-        <img src="../images/Rectangle 56.png" alt="auto">
-            <div class="slider_deck">
-                <ul class="slider_list">
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips_chek.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                    <li class="slider_list-item">
-                        <img src="../icons/ellips.svg" alt="color_auto">
-                    </li>
-                </ul>
+        <div class="slider_thee">
+            <div class="slider_item">
+                <img src="../images/Rectangle 25.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
             </div>
-            <p class="sub_text_desc">
-                Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
-                Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
-                массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
-                обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
-                Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
-                вместе с массивным бампером с раздвоенными решетками 
-                фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
-                и, даже спортивный вид.                
-                </p>
+            <div class="slider_item">
+                <img src="../images/Rectangle 55.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 56.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 56.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+            <div class="slider_item">
+                <img src="../images/Rectangle 55.png" alt="" class="">
+                <p class="sub_text_desc">
+                    Chery Tiggo 4 сочетает в себе классические формы кроссовера и современные дизайнерские решения. 
+                    Правильные пропорции кузова позволяют получить подтянутый и стремительный силуэт автомобиля сбоку, 
+                    массивные фары с небольшим прищуром в совокупности с крупной решеткой радиатора, 
+                    обилием хрома и фальш-воздухозаборниками в нижней части бампера завершают основательный и солидный образ автомобиля. 
+                    Задняя часть Tiggo 4 может похвастать крупными светодиодными фонарями сложной ступенчатой формы,
+                    вместе с массивным бампером с раздвоенными решетками 
+                    фальш-выхлопа, хромированными декоративными элементами и спойлером пятой двери задняя часть кроссовера имеет подтянутый,
+                    и, даже спортивный вид.                
+                    </p>
+            </div>
+        </div>
     </section>
         <section class="equipment">
             <div class="container">
@@ -572,96 +684,103 @@
         </section>
         <section class="news">
             <h2 class="news_title">Новости</h2>
-            <div class="news_container">
-                <div class="news_card">
-                    <img src="../images/Rectangle 65.png" alt="news_img">
-                    <p class="news_sub-title">
-                        Chery и iFlytek углубили всестороннее стратегическое сотрудничество
-                    </p>
-                    <p class="news_text">
-                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
-                        соглашение об углублении 
-                        стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
-                        для серийных автомобилей, 
-                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
-                    </p>
-                    <a href="#">Читать больше</a>
-                </div>
-            </div>
-            <div class="news_container">
-                <div class="news_card">
-                    <img src="../images/Rectangle 65.png" alt="news_img">
-                    <p class="news_sub-title">
-                        Chery и iFlytek углубили всестороннее стратегическое сотрудничество
-                    </p>
-                    <p class="news_text">
-                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
-                        соглашение об углублении 
-                        стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
-                        для серийных автомобилей, 
-                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
-                    </p>
-                    <a href="#">Читать больше</a>
-                </div>
-            </div>
-            <div class="news_container">
-                <div class="news_card">
-                    <img src="../images/Rectangle 65.png" alt="news_img">
-                    <p class="news_sub-title">
-                        Chery и iFlytek углубили всестороннее стратегическое сотрудничество
-                    </p>
-                    <p class="news_text">
-                        24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
-                        соглашение об углублении 
-                        стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
-                        для серийных автомобилей, 
-                        совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
-                    </p>
-                    <a href="#">Читать больше</a>
-                </div>
-            </div>
+                <ul class="news_container">
+                    <li class="news_card">
+                        <img src="../images/Rectangle 65.png" class="news_img" alt="news_img">
+                        <p class="news_sub-title">
+                            Chery и iFlytek углубили всестороннее стратегическое сотрудничество
+                        </p>
+                        <p class="news_text">
+                            24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
+                            соглашение об углублении 
+                            стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
+                            для серийных автомобилей, 
+                            совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                        </p>
+                        <a href="#">Читать больше</a>
+                    </li>
+                    <li class="news_card">
+                        <img src="../images/Rectangle 65.png" class="news_img" alt="news_img">
+                        <p class="news_sub-title">
+                            Chery и iFlytek углубили всестороннее стратегическое сотрудничество
+                        </p>
+                        <p class="news_text">
+                            24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
+                            соглашение об углублении 
+                            стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
+                            для серийных автомобилей, 
+                            совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                        </p>
+                        <a href="#">Читать больше</a>
+                    </li>
+                    <li class="news_card">
+                        <img src="../images/Rectangle 65.png" class="news_img" alt="news_img">
+                        <p class="news_sub-title">
+                            Chery и iFlytek углубили всестороннее стратегическое сотрудничество
+                        </p>
+                        <p class="news_text">
+                            24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное 
+                            соглашение об углублении 
+                            стратегического взаимодействия в области разработки решений систем искусственного интеллекта (ИИ) 
+                            для серийных автомобилей, 
+                            совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
+                        </p>
+                        <a href="#">Читать больше</a>
+                    </li>
+                </ul>
         </section>
         <section class="feedback">
-            <div class="feedback_container">
-                <div class="feedback_card">
-                    <img src="../images/Ellipse 55.png" alt="feedback_img">
-                    <p class="feedback_sub-title">
-                        Роман Лесной
-                    </p>
+            <h2 class="feedback_title">Отзывы</h2>
+            <ul class="feedback_container">
+                <li class="feedback_card">
+                    <img src="../images/Rectangle 66.png" alt="">
+                    <div class="feedback_head">
+                        <img src="../images/Ellipse 55.png" alt="feedback_img">
+                        <p class="feedback_sub-title">
+                            Роман Лесной
+                        </p>
+                    </div>
                     <p class="feedback_text">
                         24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное соглашение 
                         об углублении стратегического взаимодействия в области разработки решений систем искусственного интеллекта 
                         (ИИ) для серийных автомобилей, 
                         совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
                     </p>
-                </div>
-                <div class="feedback_card">
-                    <img src="../images/Ellipse 55.png" alt="feedback_img">
-                    <p class="feedback_sub-title">
-                        Роман Лесной
-                    </p>
+                </li>
+                <li class="feedback_card">
+                    <img src="../images/Rectangle 66.png" alt="">
+                    <div class="feedback_head">
+                        <img src="../images/Ellipse 55.png" alt="feedback_img">
+                        <p class="feedback_sub-title">
+                            Роман Лесной
+                        </p>
+                    </div>
                     <p class="feedback_text">
                         24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное соглашение 
                         об углублении стратегического взаимодействия в области разработки решений систем искусственного интеллекта 
                         (ИИ) для серийных автомобилей, 
                         совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
                     </p>
-                </div>
-                <div class="feedback_card">
-                    <img src="../images/Ellipse 55.png" alt="feedback_img">
-                    <p class="feedback_sub-title">
-                        Роман Лесной
-                    </p>
+                </li>
+                <li class="feedback_card">
+                    <img src="../images/Rectangle 66.png" alt="">
+                    <div class="feedback_head">
+                        <img src="../images/Ellipse 55.png" alt="feedback_img">
+                        <p class="feedback_sub-title">
+                            Роман Лесной
+                        </p>
+                    </div>
                     <p class="feedback_text">
                         24 мая 2021 года компании Chery Automobile Co., Ltd. и iFlytek CO., LTD. подписали рамочное соглашение 
                         об углублении стратегического взаимодействия в области разработки решений систем искусственного интеллекта 
                         (ИИ) для серийных автомобилей, 
                         совместной работе над беспилотными автомобилями и доведением их автономности до четвертого уровня.
                     </p>
-                </div>
-            </div>
+                </li>     
+            </ul>
         </section>
     </main>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.866453368904!2d49.411252315815794!3d53.57799998002826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4167d7c825fa0d55%3A0xe7119eab7216886e!2z0JPQmiAi0JDRgdCQ0LLRgtC-Ig!5e0!3m2!1sru!2sru!4v1624537743551!5m2!1sru!2sru" width="100%" height="492" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <!--подключение jquery-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

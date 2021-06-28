@@ -98,7 +98,7 @@
     src: url(../fonts/TacticSans-Bld.ttf);
     font-size: 58px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 70px;
     letter-spacing: 0em;
     text-align: left;
@@ -149,11 +149,90 @@
     color: #18a0fb;
 }
 
-.slider {
-    position: absolute;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+.sub_title {
+    font-family: 'TacticSans-Bld';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 40px;
 }
+
+.field{
+    padding-left: 30px;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.input__traid-in{
+    width: 524px;
+    height: 45px;   
+    background: #FFFFFF;
+    border: 1px solid rgba(52, 130, 198, 0.05);
+    box-sizing: border-box;
+    box-shadow: 4px 6px 10px rgba(110, 185, 241, 0.1);
+    border-radius: 5px;
+}
+
+.checkbox {
+    padding-top: 15px;
+    padding-left: 320px;
+}
+
+.disabled__btn {
+    width: 312px;
+    height: 57px;
+    margin-top: 55px;
+    margin-left: 136px;
+}
+
+.form_wrapper {
+    display: flex;
+}
+
+.form_traid-in {
+    margin-left: 196px;
+    margin-top: 130px;
+    width: 584px;
+    height: 600px;
+    left: 196px;
+    top: 808px;
+    background-color: #F8FAFD;
+    border: 1px solid rgba(52, 130, 198, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.credit_calc {
+    margin-left: 40px;
+    margin-top: 130px;
+    width: 584px;
+    height: 600px;
+    left: 820px;
+    top: 808px;
+    background: #F8FAFD;
+    border: 1px solid rgba(52, 130, 198, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.input_inner {
+    opacity: 0.5;
+}
+
+.title_item {
+    font-family: 'TacticSans-Bld';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
 
 .sub_text_desc {
     font-size: 14px;
@@ -197,4 +276,89 @@
     letter-spacing: 0em;
     text-align: left;
 
+}
+
+.news {
+    margin-top: 100px;
+}
+
+.news_title {
+    font-family: 'TacticSans-Bld';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.news_container {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 140px;
+    width: 376px;
+    
+}
+
+.news_card {
+    margin-right: 40px;
+}
+
+.news_card:last-child {
+    margin-right: 0px;
+}
+
+.news_sub-title {
+    font-family: 'TacticSans-Bld';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+.news_text {
+    margin-bottom: 15px;
+}
+
+.feedback_title {
+    font-family: 'TacticSans-Bld';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.feedback_container {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 140px;
+    width: 376px;
+}
+
+.feedback_card {
+    margin-right: 40px;
+    margin-bottom: 100px;
+}
+
+.feedback_card:last-child {
+    margin-right: 0px;
+}
+
+.feedback_head {
+    font-family: 'TacticSans-Bld';
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
 }
