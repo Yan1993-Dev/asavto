@@ -1,3 +1,17 @@
+*{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .header {
     margin-bottom: 126px;
  }
@@ -29,50 +43,41 @@
 
 /* слайдер */
 
-.slider_container {
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  
+.slider-container {
+    position: absolute;
+    margin-top: -286px;
+    margin-left: 832px;
+    padding-right: 0px;
+    overflow: hidden;
+    max-width: 590px;
+}
+
 .img_slider {
-    width: 557px;
-    height: 326px;
+    text-align: center;
 }
 
-.button {
-      width: 45px;
-      height: 45px;
-      border: 2.5px solid #000;
-      border-radius: 50px;
-      background-color: transparent;
-      font-size: 20px;
-      outline: none;
-      transition: all .5s;
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+	background-color: tomato;
+	opacity: 1;
 }
 
-.button:hover:disabled{
-            cursor: pointer;
-            background-color: #000;
-            color: #fff;
-          }
-
-.button:focus(:disabled) {
-          cursor: pointer;
-          background-color: #000;
-          color: #fff; 
-} 
-.button:disabled {
-        opacity: .4;
-        pointer-event: none;
-        user-select: none;
-      }
-.tiggo_img {
-    width: 557px;
-    height: 326px;
+.swiper-pagination-bullet-active {
+	background-color: navy;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	padding-bottom: 50px;
+}
+
 
 .btn {
     display: inline-block;
