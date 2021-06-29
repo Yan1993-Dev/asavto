@@ -27,6 +27,53 @@
 
 }
 
+/* слайдер */
+
+.slider_container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+.img_slider {
+    width: 557px;
+    height: 326px;
+}
+
+.button {
+      width: 45px;
+      height: 45px;
+      border: 2.5px solid #000;
+      border-radius: 50px;
+      background-color: transparent;
+      font-size: 20px;
+      outline: none;
+      transition: all .5s;
+}
+
+.button:hover:disabled{
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+          }
+
+.button:focus(:disabled) {
+          cursor: pointer;
+          background-color: #000;
+          color: #fff; 
+} 
+.button:disabled {
+        opacity: .4;
+        pointer-event: none;
+        user-select: none;
+      }
+.tiggo_img {
+    width: 557px;
+    height: 326px;
+}
+
 .btn {
     display: inline-block;
     color: #fff;
