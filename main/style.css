@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    padding: 0;
+    padding: 1px;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -44,15 +44,13 @@ ul {
 /* слайдер */
 
 .slider-container {
-    position: absolute;
     margin-top: -286px;
     margin-left: 832px;
     padding-right: 0px;
-    overflow: hidden;
-    max-width: 590px;
 }
 
 .img_slider {
+    z-index: 1;
     text-align: center;
 }
 
@@ -68,16 +66,125 @@ ul {
 	background-color: navy;
 }
 
-.swiper-button-prev,
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+
+.swiper-button-prev {
+    background-image: url(../icons/arrowL.svg);
+    margin-right: 10px; 
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    left: 1719px;
+    border: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
 .swiper-button-next {
-	position: static;
+    background-image: url(../icons/arrowR.svg);
 	margin-left: 10px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
 }
 
 .swiper-container {
 	padding-bottom: 50px;
 }
 
+/* второй слайдер */
+
+.swiper-slide_one {
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-wrapper_one {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card_one {
+    flex-shrink: 0;
+}
+
+
+/* третий слайдер */
+
+.swiper-slide_two {
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-wrapper_two {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card_two {
+    flex-shrink: 0;
+}
+
+/* четвертый слайдер */
+
+.swiper-slide_three {
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-wrapper_three {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card_three {
+    flex-shrink: 0;
+}
+
+/* пятый слайдер */
+
+.swiper-slide_four {
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-wrapper_four {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card_four {
+    flex-shrink: 0;
+}
+
+.slider_title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.news_img {
+    max-width: 378px;
+    max-height: 378px;
+}
+
+.card {
+    width: 557px;
+    height: 326px;
+}
 
 .btn {
     display: inline-block;
@@ -94,6 +201,10 @@ ul {
 .btn:hover {
     color: #3482C6;
     box-shadow: 0.1;
+}
+
+.second {
+    margin-bottom: 45px;
 }
 
 .adress{
@@ -154,7 +265,7 @@ ul {
     line-height: 70px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 139px;
+    margin-top: 70px;
     padding-bottom: 40px;
 }
 
@@ -292,42 +403,72 @@ ul {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-
 }
 
-.equipment_title{
-    font-family: 'TacticSans-Bld';
-    src: url(../fonts/TacticSans-Bld.ttf);
+.equipment {
+    margin-top: 100px;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-
 }
 
-.thead {
-    font-family: 'TacticSans-Bld';
-    src: url(../fonts/TacticSans-Bld.ttf);
-    font-size: 36px;
+.equipment_to_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 258px;
+    padding-right: 20px;
+    padding-bottom: 21px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 43px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.detail_title{
-    font-family: 'TacticSans-Bld';
-    src: url(../fonts/TacticSans-Bld.ttf);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
+    text-transform: uppercase;
+}
 
+.equipment_item.comp {
+    margin-right: 53px;
+}
+
+.equipment_item.price {
+    margin-right: 100px;
+}
+
+.equipment_title_two {
+    display: flex;
+    margin-left: 258px;
+    padding: 11px;
+    background: #F8FAFD;
+    border: 1px solid rgba(52, 130, 198, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.equipment_item_two.model {
+    margin-right: 70px;
+    
+}
+
+.equipment_item_two.old_price {
+    margin-right: 36px;
+    text-decoration: line-through;
+    font-size: 18px;
+    line-height: 24,52px;
+
+}
+
+.equipment_item_two.new_price {
+    margin-right: 85px;
+}      
+
+.equipment_item_two.credit_price {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3482C6;
 }
 
 .news {
