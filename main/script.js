@@ -2,7 +2,7 @@ const slider = document.querySelector('.swiper-container');
 const slider_one = document.querySelector('.swiper-container_one');
 const slider_two = document.querySelector('.swiper-container_two');
 const slider_three = document.querySelector('.swiper-container_three');
-const slider_four = document.querySelector('.swiper-container_four');
+const slider_four = document.querySelector('.slider-container_four')
 
 
 let mySwiper = new Swiper(slider, {
@@ -44,7 +44,7 @@ let mySwiper_two = new Swiper(slider_two, {
 	wrapperClass: 'swiper-wrapper_two',
 	loop: true,
 	pagination: {
-		el: '.swiper-pagination_two',
+		el: '.swiper-pagination_one',
 		clickable: true,
 	},
 	navigation: {
@@ -60,7 +60,7 @@ let mySwiper_three = new Swiper(slider_three, {
 	wrapperClass: 'swiper-wrapper_three',
 	loop: true,
 	pagination: {
-		el: '.swiper-pagination_three',
+		el: '.swiper-pagination_one',
 		clickable: true,
 	},
 	navigation: {

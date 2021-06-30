@@ -107,16 +107,29 @@ ul {
 .swiper-slide_one {
     overflow: hidden;
     width: 100%;
+
+}
+
+.text_slide {
+    text-align: center;
 }
 
 .swiper-wrapper_one {
     display: flex;
-    width: 100%;
     height: 100%;
 }
 
 .card_one {
     flex-shrink: 0;
+}
+
+.line_title::before {
+    content: '';
+    position: absolute;
+    width: 671px;
+    height: 2px;
+    background-color: #3482C6;
+    z-index: -1;
 }
 
 
@@ -129,7 +142,6 @@ ul {
 
 .swiper-wrapper_two {
     display: flex;
-    width: 100%;
     height: 100%;
 }
 
@@ -146,7 +158,6 @@ ul {
 
 .swiper-wrapper_three {
     display: flex;
-    width: 100%;
     height: 100%;
 }
 
@@ -173,6 +184,19 @@ ul {
 
 .slider_title {
     text-transform: uppercase;
+    text-align: center;
+}
+
+.img_slider_one {
+    margin-left: 196px;
+    margin-top: 60px;
+}
+
+.slider_title {
+    margin-top: 100px;
+}
+
+.swiper-pagination_one {
     text-align: center;
 }
 
