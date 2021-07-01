@@ -10,10 +10,17 @@ let mySwiper = new Swiper(slider, {
 	spaceBetween: 10,
 	loop: true,
 	centerMode: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
+	observer: true,
+	observeParents: true,
+	keyboard: {
+		enabled: true
 	},
+	pagination: {
+		el: '.swiper_pagination',
+		clickable: true,
+		type : 'custom',
+		bulletClass:'slider_img_title',
+	  },
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
@@ -77,7 +84,7 @@ let mySwiper_four = new Swiper(slider_four, {
 	loop: true,
 	centerMode: true,
 	pagination: {
-		el: '.swiper-pagination_one pag',
+		el: '.swiper-pagination_one',
 		clickable: true,
 	},
 	navigation: {
