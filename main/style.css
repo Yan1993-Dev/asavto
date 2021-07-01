@@ -26,7 +26,11 @@ ul {
 .header_container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+}
+
+.logo {
+    width: 107px;
+    height: 62px;
 }
 
 .company_logo_wrapper {
@@ -41,30 +45,24 @@ ul {
 
 }
 
+.title {
+    margin-top: -50px;
+}
+
 /* слайдер */
 
 .slider-container {
     margin-top: -286px;
     margin-left: 832px;
-    padding-right: 0px;
 }
 
 .img_slider {
+    width: 557px;
+    height: 326px;
     z-index: 1;
     text-align: center;
 }
 
-.swiper-pagination-bullet {
-	width: 10px;
-	height: 10px;
-	margin: 0 15px;
-	background-color: tomato;
-	opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-	background-color: navy;
-}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -78,7 +76,6 @@ ul {
     background-color: #fff;
     width: 20px;
     height: 20px;
-    left: 1719px;
     border: #fff;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,18 +101,14 @@ ul {
 
 /* второй слайдер */
 
-.swiper-slide_one {
+.slider-container_one {
     overflow: hidden;
     width: 100%;
-
-}
-
-.text_slide {
-    text-align: center;
 }
 
 .swiper-wrapper_one {
     display: flex;
+    width: 100%;
     height: 100%;
 }
 
@@ -123,19 +116,10 @@ ul {
     flex-shrink: 0;
 }
 
-.line_title::before {
-    content: '';
-    position: absolute;
-    width: 671px;
-    height: 2px;
-    background-color: #3482C6;
-    z-index: -1;
-}
-
 
 /* третий слайдер */
 
-.swiper-slide_two {
+.slider-container_two {
     overflow: hidden;
     width: 100%;
 }
@@ -149,9 +133,20 @@ ul {
     flex-shrink: 0;
 }
 
+.line_title_two::before {
+    content: '';
+    position: absolute;
+    width: 671px;
+    height: 5px;
+    left: 850px;
+    background-color: #3482C6;
+    z-index: -1;
+    margin-top: 117px;
+}
+
 /* четвертый слайдер */
 
-.swiper-slide_three {
+.slider-container_three {
     overflow: hidden;
     width: 100%;
 }
@@ -165,16 +160,25 @@ ul {
     flex-shrink: 0;
 }
 
+.line_title_three {
+    content: '';
+    position: absolute;
+    width: 621px;
+    height: 5px;
+    background-color: #3482C6;
+    z-index: -1;
+    margin-top: 117px;
+}
+
 /* пятый слайдер */
 
-.swiper-slide_four {
+.slider-container_four {
     overflow: hidden;
     width: 100%;
 }
 
 .swiper-wrapper_four {
     display: flex;
-    width: 100%;
     height: 100%;
 }
 
@@ -198,6 +202,17 @@ ul {
 
 .swiper-pagination_one {
     text-align: center;
+}
+
+.line_title_four {
+    content: '';
+    position: absolute;
+    width: 691px;
+    height: 5px;
+    left: 830px;
+    background-color: #3482C6;
+    z-index: -1;
+    margin-top: 117px;
 }
 
 .news_img {
@@ -231,14 +246,14 @@ ul {
     margin-bottom: 45px;
 }
 
-.adress{
+.adress {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 328px;
+    padding-left: 250px;
 }
 
 .icon_dot {
