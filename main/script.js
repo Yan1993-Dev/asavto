@@ -79,12 +79,12 @@ let mySwiper_three = new Swiper(slider_three, {
 let mySwiper_four = new Swiper(slider_four, {
 	slidesPerView: 1,
 	spaceBetween: 10,
-	slideClass: 'swiper-container_four',
-	wrapperClass: 'swiper-wrapper_four',
+	slideClass: 'slider-container_four',
+	wrapperClass: 'swiper-container_four',
 	loop: true,
 	centerMode: true,
 	pagination: {
-		el: '.swiper-pagination_one',
+		el: '.swiper-pagination_four',
 		clickable: true,
 	},
 	navigation: {

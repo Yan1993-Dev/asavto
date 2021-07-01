@@ -260,6 +260,7 @@ ul {
     display: flex;
     width: 100%;
     height: 100%;
+    margin-top: -100px;
 }
 
 .card_one {
@@ -277,9 +278,15 @@ ul {
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
+.slider_title_one {
+    text-transform: uppercase;
+    padding-bottom: 100px;
+    margin-left: 680px;
+}
+
 .slider_title_two {
     text-transform: uppercase;
-    margin-left: 680px;
+    text-align: center;
 }
 
 /* третий слайдер */
@@ -287,8 +294,7 @@ ul {
 .slider-container_two {
     overflow: hidden;
     width: 100%;
-    margin-top: -170px;
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
 .swiper-wrapper_two {
@@ -313,9 +319,7 @@ ul {
 
 .slider_title_three {
     text-transform: uppercase;
-    padding-bottom: 100px;
-    margin-left: 680px;
-    margin-top: 50px;
+    text-align: center;
 }
 
 /* четвертый слайдер */
@@ -323,7 +327,8 @@ ul {
 .slider-container_three {
     overflow: hidden;
     width: 100%;
-    margin-top: -130px;
+    margin-top: 40px;
+
 }
 
 .swiper-wrapper_three {
@@ -335,21 +340,17 @@ ul {
     flex-shrink: 0;
 }
 
-.line_title_three {
+.line_title_three::before {
     content: '';
     position: absolute;
-    width: 660px;
+    width: 610px;
     height: 3px;
     background-color: #3482C6;
     z-index: -1;
-    margin-top: -27px;
+    margin-top: 16px;
 }
 
-.slider_title_four {
-    text-transform: uppercase;
-    padding-bottom: 100px;
-    margin-left: 680px;
-}
+
 
 
 /* пятый слайдер */
@@ -357,6 +358,7 @@ ul {
 .slider-container_four {
     overflow: hidden;
     width: 100%;
+    margin-top: 50px;
 }
 
 .swiper-wrapper_four {
@@ -373,27 +375,24 @@ ul {
     margin-top: 60px;
 }
 
-.slider_title_one {
-    text-transform: uppercase;
-    margin-top: -18px;
-    padding-bottom: 100px;
-    margin-left: 680px;
-}
-
-
 .swiper-pagination_one {
     text-align: center;
 }
 
-.line_title_four {
+.slider_title_four {
+    text-transform: uppercase;
+    margin-left: 750px;
+}
+
+.line_title_four::before {
     content: '';
     position: absolute;
-    width: 691px;
+    width: 671px;
     height: 5px;
-    left: 830px;
+    left: 850px;
     background-color: #3482C6;
     z-index: -1;
-    margin-top: 117px;
+    margin-top: 16px;
 }
 
 /* слайдеры закончились */
