@@ -310,7 +310,7 @@ ul {
     content: '';
     position: absolute;
     width: 671px;
-    height: 5px;
+    height: 3px;
     left: 850px;
     background-color: #3482C6;
     z-index: -1;
@@ -388,7 +388,7 @@ ul {
     content: '';
     position: absolute;
     width: 671px;
-    height: 5px;
+    height: 3px;
     left: 850px;
     background-color: #3482C6;
     z-index: -1;
