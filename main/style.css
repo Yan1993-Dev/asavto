@@ -247,6 +247,10 @@ ul {
     max-height:  100%;
 }
 
+.text_slide {
+    text-align: center;
+}
+
 /* второй слайдер */
 
 .slider-container_one {
@@ -542,6 +546,7 @@ ul {
 
 .equipment_item_credit_price {
     margin-right: 55px;
+    color: #3482C6;
 }
 
 .accordion {
@@ -586,6 +591,40 @@ ul {
 	padding: 20px;
 }
 
+/* стили контента аккордеона */
+
+.save_title {
+    margin-left: 288px;
+    padding: 17px;
+}
+
+.save {
+    margin-left: 288px;
+    padding: 17px;
+}
+
+.design_title {
+    margin-left: 288px;
+    padding: 17px;
+}
+
+.design {
+    margin-left: 288px;
+    padding: 17px;
+}
+
+.comfort_title {
+    margin-left: 288px;
+    padding: 17px;
+}
+
+.comfort {
+    margin-left: 17px;
+}
+
+.comfort_item{
+    margin-left: 288px;
+}
 
 .news {
     margin-top: 100px;
