@@ -51,7 +51,7 @@ let mySwiper_two = new Swiper(slider_two, {
 	wrapperClass: 'swiper-wrapper_two',
 	loop: true,
 	pagination: {
-		el: '.swiper-pagination_one',
+		el: '.swiper-pagination_two',
 		clickable: true,
 	},
 	navigation: {
@@ -67,7 +67,7 @@ let mySwiper_three = new Swiper(slider_three, {
 	wrapperClass: 'swiper-wrapper_three',
 	loop: true,
 	pagination: {
-		el: '.swiper-pagination_one',
+		el: '.swiper-pagination_three',
 		clickable: true,
 	},
 	navigation: {
@@ -92,3 +92,29 @@ let mySwiper_four = new Swiper(slider_four, {
 		prevEl: '.swiper-button-prev_four',
 	},
 })
+
+// аккордеон
+document.addEventListener('DOMContentLoaded', () => {
+	const accordions = document.querySelectorAll('.accordion');
+
+	accordions.forEach(el => {
+		el.addEventListener('click', (e) => {
+			const self = e.currentTarget;
+			const control = self.querySelector('.accordion__control');
+			const content = self.querySelector('.accordion__content');
+
+			self.classList.toggle('open');
+
+			// если открыт аккордеон
+			if (self.classList.contains('open')) {
+				control.setAttribute('aria-expanded', true);
+				content.setAttribute('aria-hidden', false);
+				content.style.maxHeight = content.scrollHeight + 'px';
+			} else {
+				control.setAttribute('aria-expanded', false);
+				content.setAttribute('aria-hidden', true);
+				content.style.maxHeight = null;
+			}
+		});
+	});
+});
