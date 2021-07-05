@@ -1,7 +1,10 @@
+@font-face {
+    font-family: 'Tactic Sans';
+    src: url(../fonts/TacticSansExd-Bld.ttf);
+}
+
 *{
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
     padding: 1px;
     box-sizing: border-box;
@@ -24,7 +27,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 252px;
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -43,6 +46,7 @@ ul {
     width: 208px;
     height: 38px;
     top: 20px;
+    margin-left: 78px;
 }
 
 .icon_dot {
@@ -112,7 +116,7 @@ ul {
 .nav_item-link {
     font-family: 'TacticSans-Bld';
     src: url(../fonts/TacticSans-Bld.ttf);
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
@@ -193,7 +197,6 @@ ul {
 .img_slider {
     width: 557px;
     height: 326px;
-    z-index: 1;
     text-align: center;
 }
 
@@ -315,7 +318,6 @@ ul {
     height: 3px;
     left: 850px;
     background-color: #3482C6;
-    z-index: -1;
     margin-top: 16px;
 }
 
@@ -348,7 +350,6 @@ ul {
     width: 610px;
     height: 3px;
     background-color: #3482C6;
-    z-index: -1;
     margin-top: 16px;
 }
 
@@ -393,7 +394,6 @@ ul {
     height: 3px;
     left: 850px;
     background-color: #3482C6;
-    z-index: -1;
     margin-top: 16px;
 }
 
@@ -455,7 +455,7 @@ ul {
 }
 
 .form_traid-in {
-    margin-left: 196px;
+    margin-left: 135px;
     margin-top: 130px;
     width: 584px;
     height: 600px;
@@ -467,7 +467,7 @@ ul {
 }
 
 .credit_calc {
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 130px;
     width: 584px;
     height: 600px;
@@ -507,12 +507,11 @@ ul {
 .equipment_to_title {
     display: flex;
     align-items: center;
-    margin-left: 308px;
+    margin-left: 258px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    padding-bottom: 20px;
 }
 
 .equipment_item_comp {
@@ -524,7 +523,7 @@ ul {
 }
 
 .equipment_title_two {
-    margin-left: 277px;
+    margin-left: 230px;
 }
 
 .equipment_title_two {
@@ -533,33 +532,62 @@ ul {
 }
 
 .equipment_item_model {
-    margin-right: 130px;
+    margin-right: 85px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    
 }
 .equipment_item_old_price {
+    margin-right: 40px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
     text-decoration-line: line-through;
-    margin-right: 55px;
 }
 
 .equipment_item_new_price {
     margin-right: 105px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .equipment_item_credit_price {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
     margin-right: 55px;
     color: #3482C6;
-}
-
-.accordion {
-    margin-bottom: 10px;
 }
 
 .accordion__control {
 	width: 100%;
 	background-color: transparent;
 	cursor: pointer;
+    border: none;
+}
+
+.equipment_title_two {
     border: 1px solid rgba(52, 130, 198, 0.1);
+    background: #F8FAFD;
     box-sizing: border-box;
     border-radius: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 19px;
 }
 
 .accordion__content {
@@ -582,13 +610,22 @@ ul {
 	transition: transform 0.3s ease-out;
 }
 
+.equipment_item_credit_btn {
+    height: 41px;
+    width: 208px;
+    padding-top: 10px;
+    color: #fff;
+    border-radius: 0px;
+    background: #3482C6;
+    box-shadow: 0px 0px 20px rgba(52, 130, 198, 0.4);
+}
+
 .open .accordion__icon {
 	transform: rotate(180deg);
 }
 
 .open .accordion__content {
 	opacity: 1;
-	padding: 20px;
 }
 
 /* стили контента аккордеона */
@@ -709,4 +746,131 @@ ul {
     font-size: 18px;
     line-height: 22px;
     align-items: center;
+}
+
+/* попап тест драйв */
+
+.popup {
+    display: none;
+    height: 547px;
+    width: 716px;
+    top: 100px;
+    position: fixed;
+    margin-left: 420px;
+    border-radius: 10px;
+    background-color: #F8FAFD;
+    border: 1px solid rgba(52, 130, 198, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.popup_cont {
+    margin-top: -30px;
+}
+
+.popup_open {
+    display: block;
+    z-index: 10;
+}
+
+.field_name  {
+    margin-left: 100px;
+    z-index: 10;
+}
+
+.field_phone {
+    margin-top: 15px;
+    margin-left: 100px;
+    z-index: 10;
+}
+
+.popup_drive {
+    margin-left: 200px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+    z-index: 10;
+}
+
+.input__popup {
+    display: block;
+    width: 524px;
+    height: 45px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(52, 130, 198, 0.05);
+    box-sizing: border-box;
+    box-shadow: rgb(110 185 241 / 10%) 4px 6px 10px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    z-index: 10;
+}
+
+.label__popup {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    z-index: 10;
+}
+
+.field_calendar {
+    margin-top: 15px;
+    margin-left: 100px;
+    z-index: 10;
+}
+
+.popup__btn {
+    width: 312px;
+    height: 57px;
+    margin-top: 25px;    
+    margin-left: 200px;
+    z-index: 10;
+}
+
+.popup_drive__btn { 
+    width: 19px;
+    height: 19px;
+    background-color: transparent;
+    background-image: url(../icons/X.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    margin-left: 669px;
+    padding-bottom: 27px;
+    z-index: 10;
+}
+
+.popup_drive__btn:hover {
+    opacity: .5;
+    z-index: 10;
+}
+
+.popup_drive__btn:focus {
+    opacity: .3;
+    z-index: 10;
+}
+
+.popup_overlay {
+    display: none;
+    background: #3482C6;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.popup_overlay.join {
+    display: block;
+    z-index: 10;
+}
+
+.checkbox_popup {
+    margin-left: 400px;
+    margin-top: 20px;
 }
